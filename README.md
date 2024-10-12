@@ -42,6 +42,12 @@ Module 21 focuses on the evolution of Natural Language Processing (NLP), includi
 
 The challenge is to refactor code from an SMS text classification solution into a function that constructs a linear Support Vector Classification (SVC) model. Once the model is created and trained, create a Gradio app to host the application and enable users to test text messages. The application will provide feedback to users, indicating whether the text is classified as spam or not, based on the model's performance.
 
-## Solution
+## Solution #1
 
 The solution is in the Jupyter Notebook file [notebooks/gradio_sms_text_classification.ipynb](https://github.com/JimGile/sms_spam_detector/blob/main/notebooks/gradio_sms_text_classification.ipynb).
+
+## Solution #2
+
+I have created an alternate solution that trains the model and saves it as a pickle file [train_model.py](https://github.com/JimGile/sms_spam_detector/blob/main/train_model.py) so that it can be used in the Gradio app Python file [app.py](https://github.com/JimGile/sms_spam_detector/blob/main/app.py). This allows the solution to be hosted more permanently on my Hugging Face space.
+
+The hosted solution is available [HERE](https://huggingface.co/spaces/JimGile/sms_spam_detector).
