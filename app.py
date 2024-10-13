@@ -50,8 +50,7 @@ def create_gradio_app():
                 placeholder="Prediction will show here..."
             ),
             gr.Checkbox(
-                label="Spam?",
-                value=False
+                label="Spam?"
             )
         ],
         title="SMS Text Spam Detector",
@@ -62,7 +61,8 @@ def create_gradio_app():
             "You won 2 free tickets to the Super Bowl. Text us to claim your prize.",
             "Thanks for registering. Text 4343 to receive free updates on medicare.",
             "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2000. Text FA to 87121 to receive entry.",
-        ]
+        ],
+        cache_examples=False
     )
     return sms_app
 
